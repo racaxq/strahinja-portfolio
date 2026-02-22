@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Strahinja Bomeštar | Full Stack Developer</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar-dark-custom">
+  <div class="nav-brand">SB</div>
+  <div class="nav-links">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Work</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="sky" id="sky"></div>
+  <div class="stars" id="stars"></div>
+  <div class="moon" id="moon"></div>
+  <div class="sun" id="sun"></div>
+
+  <!-- Mountains -->
+  <div class="mountains">
+    <svg viewBox="0 0 1440 200" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <polygon points="0,200 180,40 360,200" fill="#0d2010" opacity="0.9"/>
+      <polygon points="200,200 430,20 660,200" fill="#112614" opacity="0.95"/>
+      <polygon points="500,200 720,10 940,200" fill="#0d2010"/>
+      <polygon points="780,200 1000,30 1220,200" fill="#112614"/>
+      <polygon points="1100,200 1320,50 1540,200" fill="#0d2010"/>
+    </svg>
+  </div>
+
+  <!-- Tree line -->
+  <div class="treeline">
+    <svg viewBox="0 0 1440 130" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <g fill="#0a1e0a">
+        <polygon points="0,130 25,50 50,130"/><polygon points="30,130 60,30 90,130"/>
+        <polygon points="70,130 100,55 130,130"/><polygon points="110,130 140,35 170,130"/>
+        <polygon points="150,130 185,20 220,130"/><polygon points="200,130 230,50 260,130"/>
+        <polygon points="240,130 270,30 300,130"/><polygon points="280,130 315,45 350,130"/>
+        <polygon points="330,130 360,25 390,130"/><polygon points="370,130 405,40 440,130"/>
+        <polygon points="420,130 450,55 480,130"/><polygon points="460,130 495,20 530,130"/>
+        <polygon points="510,130 540,45 570,130"/><polygon points="550,130 585,30 620,130"/>
+        <polygon points="600,130 630,50 660,130"/><polygon points="640,130 675,25 710,130"/>
+        <polygon points="690,130 720,40 750,130"/><polygon points="730,130 765,55 800,130"/>
+        <polygon points="780,130 810,20 840,130"/><polygon points="820,130 855,35 890,130"/>
+        <polygon points="870,130 900,50 930,130"/><polygon points="910,130 945,30 980,130"/>
+        <polygon points="960,130 990,45 1020,130"/><polygon points="1000,130 1035,20 1070,130"/>
+        <polygon points="1050,130 1080,50 1110,130"/><polygon points="1090,130 1125,35 1160,130"/>
+        <polygon points="1140,130 1170,55 1200,130"/><polygon points="1180,130 1215,25 1250,130"/>
+        <polygon points="1230,130 1260,40 1290,130"/><polygon points="1270,130 1305,20 1340,130"/>
+        <polygon points="1320,130 1350,50 1380,130"/><polygon points="1360,130 1395,35 1430,130"/>
+        <polygon points="1400,130 1440,30 1480,130"/>
+      </g>
+      <g fill="#0f2810" opacity="0.85">
+        <polygon points="15,130 40,65 65,130"/><polygon points="55,130 85,45 115,130"/>
+        <polygon points="95,130 125,70 155,130"/><polygon points="175,130 205,40 235,130"/>
+        <polygon points="255,130 285,60 315,130"/><polygon points="335,130 365,38 395,130"/>
+        <polygon points="415,130 445,65 475,130"/><polygon points="495,130 525,42 555,130"/>
+        <polygon points="575,130 605,68 635,130"/><polygon points="655,130 685,38 715,130"/>
+        <polygon points="735,130 765,62 795,130"/><polygon points="815,130 845,40 875,130"/>
+        <polygon points="895,130 925,65 955,130"/><polygon points="975,130 1005,38 1035,130"/>
+        <polygon points="1055,130 1085,58 1115,130"/><polygon points="1135,130 1165,42 1195,130"/>
+        <polygon points="1215,130 1245,62 1275,130"/><polygon points="1295,130 1325,38 1355,130"/>
+        <polygon points="1375,130 1405,58 1440,130"/>
+      </g>
+    </svg>
+  </div>
+
+  <!-- Ground + river -->
+  <div class="ground">
+    <svg viewBox="0 0 1440 110" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <rect width="1440" height="110" fill="#122012"/>
+      <ellipse cx="720" cy="85" rx="260" ry="22" fill="#1a5070" opacity="0.6"/>
+      <ellipse cx="720" cy="85" rx="200" ry="14" fill="#1a6b8a" opacity="0.5"/>
+      <path d="M0,20 Q180,5 360,20 Q540,35 720,20 Q900,5 1080,20 Q1260,35 1440,20 L1440,0 L0,0 Z" fill="#0a1a0a"/>
+    </svg>
+  </div>
+
+  <div class="river"></div>
+
+  <!-- Scene: me + camp + fishing rods + laptop -->
+  <div class="scene">
+    <svg viewBox="0 0 420 140" xmlns="http://www.w3.org/2000/svg">
+      <!-- Fishing rods -->
+      <line x1="100" y1="120" x2="240" y2="50" stroke="#8B6914" stroke-width="2.5" stroke-linecap="round"/>
+      <line x1="240" y1="50" x2="280" y2="100" stroke="rgba(150,200,255,0.6)" stroke-width="1" stroke-dasharray="3,3"/>
+      <line x1="85" y1="122" x2="200" y2="55" stroke="#A07820" stroke-width="2" stroke-linecap="round"/>
+      <line x1="200" y1="55" x2="260" y2="105" stroke="rgba(150,200,255,0.5)" stroke-width="1" stroke-dasharray="3,3"/>
+      <circle cx="280" cy="102" r="3" fill="rgba(255,100,100,0.8)"/>
+      <circle cx="261" cy="107" r="2.5" fill="rgba(255,100,100,0.7)"/>
+      <!-- Campfire -->
+      <ellipse cx="170" cy="128" rx="18" ry="5" fill="#1a0a00" opacity="0.8"/>
+      <line x1="158" y1="128" x2="182" y2="118" stroke="#5C3A1E" stroke-width="4" stroke-linecap="round"/>
+      <line x1="180" y1="128" x2="158" y2="118" stroke="#5C3A1E" stroke-width="4" stroke-linecap="round"/>
+      <ellipse cx="170" cy="115" rx="7" ry="9" fill="#ff4500" opacity="0.9"/>
+      <ellipse cx="167" cy="116" rx="4" ry="7" fill="#ff8c00" opacity="0.85"/>
+      <ellipse cx="173" cy="116" rx="4" ry="6" fill="#ffd700" opacity="0.7"/>
+      <ellipse cx="170" cy="113" rx="3" ry="5" fill="#fff0a0" opacity="0.6"/>
+      <ellipse cx="170" cy="118" rx="20" ry="8" fill="#ff6600" opacity="0.15"/>
+      <!-- Tent -->
+      <polygon points="210,125 250,75 290,125" fill="#2d5a27" stroke="#1a3a18" stroke-width="1.5"/>
+      <polygon points="215,125 250,80 285,125" fill="#356b2e"/>
+      <path d="M238,125 Q250,100 262,125" fill="#1a3a18"/>
+      <!-- Me sitting -->
+      <ellipse cx="135" cy="128" rx="14" ry="6" fill="#1a1a2e" opacity="0.5"/>
+      <path d="M128,120 Q125,128 122,130" stroke="#2c2c4a" stroke-width="5" stroke-linecap="round" fill="none"/>
+      <path d="M142,120 Q145,128 148,130" stroke="#2c2c4a" stroke-width="5" stroke-linecap="round" fill="none"/>
+      <rect x="127" y="108" width="16" height="14" rx="4" fill="#3a5a8a"/>
+      <circle cx="135" cy="102" r="9" fill="#d4a574"/>
+      <path d="M126,98 Q135,90 144,98 Q143,94 135,93 Q127,94 126,98 Z" fill="#2c1810"/>
+      <path d="M132,104 Q135,106 138,104" stroke="#8B4513" stroke-width="1" fill="none" stroke-linecap="round"/>
+      <circle cx="132" cy="101" r="1.2" fill="#2c1810"/>
+      <circle cx="138" cy="101" r="1.2" fill="#2c1810"/>
+      <!-- Laptop -->
+      <rect x="120" y="113" width="28" height="18" rx="2" fill="#1a1a2e" stroke="#333366" stroke-width="1"/>
+      <rect x="122" y="115" width="24" height="13" rx="1" fill="#0d1530"/>
+      <line x1="124" y1="117" x2="140" y2="117" stroke="#00ff88" stroke-width="1" opacity="0.8"/>
+      <line x1="124" y1="119" x2="136" y2="119" stroke="#4488ff" stroke-width="1" opacity="0.7"/>
+      <line x1="124" y1="121" x2="142" y2="121" stroke="#00ff88" stroke-width="1" opacity="0.6"/>
+      <line x1="124" y1="123" x2="134" y2="123" stroke="#ffaa00" stroke-width="1" opacity="0.7"/>
+      <line x1="124" y1="125" x2="138" y2="125" stroke="#4488ff" stroke-width="1" opacity="0.6"/>
+      <!-- Backpack -->
+      <rect x="148" y="112" width="12" height="14" rx="3" fill="#8B4513" stroke="#5C2E0A" stroke-width="1"/>
+      <rect x="150" y="114" width="8" height="5" rx="1" fill="#A0522D"/>
+      <!-- Fire sparks -->
+      <circle cx="165" cy="108" r="1" fill="#ffaa00" opacity="0.7">
+        <animate attributeName="cy" values="108;90;75" dur="2s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.7;0.3;0" dur="2s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="172" cy="105" r="1.2" fill="#ff8800" opacity="0.6">
+        <animate attributeName="cy" values="105;85;70" dur="2.5s" repeatCount="indefinite" begin="0.5s"/>
+        <animate attributeName="opacity" values="0.6;0.2;0" dur="2.5s" repeatCount="indefinite" begin="0.5s"/>
+      </circle>
+      <circle cx="168" cy="110" r="0.8" fill="#ffd700" opacity="0.8">
+        <animate attributeName="cy" values="110;95;80" dur="1.8s" repeatCount="indefinite" begin="1s"/>
+        <animate attributeName="opacity" values="0.8;0.3;0" dur="1.8s" repeatCount="indefinite" begin="1s"/>
+      </circle>
+    </svg>
+  </div>
+
+  <!-- Hero text -->
+  <div class="hero-content">
+    <h1 class="hero-title">Hi, I'm <span class="highlight">Strahinja</span> 🎣</h1>
+    <div class="typing-wrap"><span id="typingText"></span><span class="cursor"></span></div>
+  </div>
+
+  <div class="scroll-hint">↓ scroll</div>
+</section>
+
+<!-- ABOUT -->
+<section class="about-section" id="about">
+  <div class="container">
+    <h2 class="section-title reveal">From Village to Valhalla 🌲💻</h2>
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="about-card reveal">
+          <p class="about-text">
+            My name is <strong style="color:var(--gold)">Strahinja Bomeštar</strong> — 28 years old, Full Stack Developer from a small village near Novi Sad, Serbia.
+            I started as an intern and grew into a developer who independently proposes architecture decisions, communicates directly with German clients, and mentors junior developers.
+          </p>
+          <p class="about-text mt-3">
+            Before code, I worked in hospitality, construction, and carpentry. That hands-on background gives me a different lens: I don't just build features — I build things that <em style="color:rgba(255,215,0,0.8)">work</em>.
+            When I'm not debugging Shopware plugins, you'll find me by a river with a fishing rod and a coffee. Nature is where I reset.
+          </p>
+          <div class="mt-4">
+            <span class="vibe-badge">🧙‍♂️ Shopware Wizard</span>
+            <span class="vibe-badge">⚔️ Symfony Samurai</span>
+            <span class="vibe-badge">🌲 Nature Lover</span>
+            <span class="vibe-badge">🎓 Mentor</span>
+            <span class="vibe-badge">🎣 Fisherman</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="skills-section" id="skills">
+  <div class="container">
+    <h2 class="section-title reveal">⚔️ Arsenal</h2>
+    <div class="row">
+      <div class="col-lg-6 reveal">
+        <div class="skill-bar-wrap">
+          <div class="skill-label"><span>PHP / Shopware / Symfony</span><span>90%</span></div>
+          <div class="skill-track"><div class="skill-fill shopware" data-width="90%"></div></div>
+        </div>
+        <div class="skill-bar-wrap">
+          <div class="skill-label"><span>Vue.js / AJAX / APIs</span><span>85%</span></div>
+          <div class="skill-track"><div class="skill-fill vue" data-width="85%"></div></div>
+        </div>
+        <div class="skill-bar-wrap">
+          <div class="skill-label"><span>JavaScript</span><span>82%</span></div>
+          <div class="skill-track"><div class="skill-fill js" data-width="82%"></div></div>
+        </div>
+      </div>
+      <div class="col-lg-6 reveal">
+        <div class="skill-bar-wrap">
+          <div class="skill-label"><span>Bootstrap / Twig / Responsive</span><span>95%</span></div>
+          <div class="skill-track"><div class="skill-fill boot" data-width="95%"></div></div>
+        </div>
+        <div class="skill-bar-wrap">
+          <div class="skill-label"><span>SQL / Git</span><span>80%</span></div>
+          <div class="skill-track"><div class="skill-fill sql" data-width="80%"></div></div>
+        </div>
+        <div class="skill-bar-wrap">
+          <div class="skill-label"><span>Modified CMS</span><span>88%</span></div>
+          <div class="skill-track"><div class="skill-fill php" data-width="88%"></div></div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-5 reveal">
+      <h5 style="color:rgba(255,255,255,0.4);font-size:0.75rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:16px">Tech Stack</h5>
+      <span class="tech-badge">🐘 PHP</span>
+      <span class="tech-badge">🛍️ Shopware</span>
+      <span class="tech-badge">🎼 Symfony</span>
+      <span class="tech-badge">💚 Vue.js</span>
+      <span class="tech-badge">🌿 Twig</span>
+      <span class="tech-badge">📦 Bootstrap</span>
+      <span class="tech-badge">⚡ JavaScript</span>
+      <span class="tech-badge">🔷 AJAX</span>
+      <span class="tech-badge">🔌 APIs</span>
+      <span class="tech-badge">🛒 Modified CMS</span>
+      <span class="tech-badge">🗄️ SQL</span>
+      <span class="tech-badge">🌱 Git</span>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="exp-section" id="experience">
+  <div class="container">
+    <h2 class="section-title reveal">📜 Experience</h2>
+    <div class="row justify-content-center">
+      <div class="col-lg-7">
+        <div class="timeline-item reveal">
+          <div class="exp-company">hqQMee d.o.o</div>
+          <div class="exp-role">Junior Full Stack Developer</div>
+          <div class="exp-date">October 2022 – Present</div>
+          <div class="exp-point">Started as an intern, promoted to full-time based on performance.</div>
+          <div class="exp-point">Built full-stack e-commerce solutions with PHP, Shopware (Symfony), and Modified CMS.</div>
+          <div class="exp-point">Implemented frontend features with Vue.js, Twig, Bootstrap, and Smarty.</div>
+          <div class="exp-point">Direct client communication with German customers after year one.</div>
+          <div class="exp-point">After 1.5 years: independently proposing and implementing architecture decisions.</div>
+          <div class="exp-point">After 2 years: mentoring interns and junior developers.</div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="exp-company">Higher Education Technical School</div>
+          <div class="exp-role">Professional Engineer of IT and Systems</div>
+          <div class="exp-date">October 2017 – August 2021 · Novi Sad</div>
+          <div class="exp-point">Graduated as Professional Engineer of Information Technologies and Systems.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOBBIES -->
+<section class="hobbies-section" id="hobbies">
+  <div class="container">
+    <h2 class="section-title reveal">🌿 Off The Grid</h2>
+    <div class="row g-3 justify-content-center">
+      <div class="col-6 col-md-2 reveal"><div class="hobby-card"><div class="hobby-icon">🎣</div><div class="hobby-name">Fishing</div></div></div>
+      <div class="col-6 col-md-2 reveal"><div class="hobby-card"><div class="hobby-icon">⛺</div><div class="hobby-name">Camping</div></div></div>
+      <div class="col-6 col-md-2 reveal"><div class="hobby-card"><div class="hobby-icon">💪</div><div class="hobby-name">Fitness</div></div></div>
+      <div class="col-6 col-md-2 reveal"><div class="hobby-card"><div class="hobby-icon">🎲</div><div class="hobby-name">Board Games</div></div></div>
+      <div class="col-6 col-md-2 reveal"><div class="hobby-card"><div class="hobby-icon">🎮</div><div class="hobby-name">Video Games</div></div></div>
+      <div class="col-6 col-md-2 reveal"><div class="hobby-card"><div class="hobby-icon">👥</div><div class="hobby-name">Social</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact-section" id="contact">
+  <div class="container">
+    <h2 class="section-title reveal">📡 Get In Touch</h2>
+    <p class="reveal" style="color:rgba(255,255,255,0.5);margin-bottom:30px">Whether it's a project, a job, or just a chat about Shopware — reach out.</p>
+    <div class="reveal">
+      <a class="contact-link" href="tel:+381616218210">📞 +381 61 621 8210</a>
+      <a class="contact-link" href="mailto:sbomestar@yahoo.com">✉️ sbomestar@yahoo.com</a>
+      <a class="contact-link" href="https://linkedin.com" target="_blank">💼 LinkedIn</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 Strahinja Bomeštar · Built with ☕ and forest air 🌲</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
